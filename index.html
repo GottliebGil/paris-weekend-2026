@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#11110f" />
+    <meta name="description" content="A shared plan for our Paris weekend, September 10–13, 2026." />
+    <title>Paris, September 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="masthead">
+        <div class="eyebrow">10–13 September 2026</div>
+        <h1>Paris<br /><em>for the weekend</em></h1>
+        <p class="intro">The shared home for our flights, stay, daily plans, and places worth making room for.</p>
+      </header>
+
+      <section class="status" aria-labelledby="status-title">
+        <div>
+          <p class="section-label">Trip status</p>
+          <h2 id="status-title">The canvas is ready.</h2>
+        </div>
+        <p>Next, we’ll decide what belongs here and shape the weekend together.</p>
+      </section>
+
+      <nav class="planning-grid" aria-label="Trip planning areas">
+        <button class="planning-card" type="button" data-area="Journey">
+          <span>01</span><strong>Journey</strong><small>Flights & arrival</small>
+        </button>
+        <button class="planning-card" type="button" data-area="Stay">
+          <span>02</span><strong>Stay</strong><small>Le Marais</small>
+        </button>
+        <button class="planning-card" type="button" data-area="Days">
+          <span>03</span><strong>Days</strong><small>The itinerary</small>
+        </button>
+        <button class="planning-card" type="button" data-area="Places">
+          <span>04</span><strong>Places</strong><small>Our shortlist</small>
+        </button>
+      </nav>
+
+      <p class="selection" id="selection" aria-live="polite">Choose a section to start planning.</p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
